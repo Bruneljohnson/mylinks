@@ -16,8 +16,12 @@ const SignupPage = () => {
   const { error, sendRequest } = useHttp();
 
   /* TAB STATE FUNCTION */
-  const completeFormStepsHandler = () => {
+  const increaseFormStepsHandler = () => {
     setFormStep((prev) => prev + 1);
+  };
+  const decreaseFormStepsHandler = () => {
+    setFormStep((prev) => prev - 1);
+    console.log(formStep);
   };
 
   /* ERROR HANDLING FOR FETCH REQUEST */
@@ -76,7 +80,8 @@ const SignupPage = () => {
         onSignUp={signUpHandler}
         loggingIn={LoggingIn}
         formStep={formStep}
-        onFormSteps={completeFormStepsHandler}
+        onFormSteps={increaseFormStepsHandler}
+        onGoBack={decreaseFormStepsHandler}
       />
     </React.Fragment>
   );

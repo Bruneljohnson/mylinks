@@ -5,7 +5,7 @@ import Input from "../Ui/Input";
 import useInput from "../../hooks/use-input";
 
 const Signup = (props) => {
-  const { formStep, onFormSteps } = props;
+  const { formStep, onFormSteps, onGoBack } = props;
   const [formIsValid, setFormIsValid] = useState(false);
 
   /* REGEX USED TO VERIFY INPUTTED EMAIL AND USE OF CUSTOM INPUT HOOKS TO CAPTURE DATA */
@@ -159,6 +159,16 @@ const Signup = (props) => {
             )}
           </div>
         </form>
+        {formStep === 1 && (
+          <button
+            type="button"
+            onClick={onGoBack}
+            className={classes.alternative}
+            style={{ margin: "3rem 0" }}
+          >
+            GO BACK
+          </button>
+        )}
       </div>
     </section>
   );
