@@ -1,4 +1,4 @@
-# My Links Url Shortener API
+# My Links Url Shortener React App
 
 An api used to shorten website and link Urls into shorter and descreet links that users can share with colleagues, friends and the world.
 
