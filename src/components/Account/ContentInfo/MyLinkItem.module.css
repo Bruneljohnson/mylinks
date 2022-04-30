@@ -1,0 +1,92 @@
+.mylink-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-fadedblue);
+  gap: 3rem;
+  padding: 1rem 0;
+}
+.mylink {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* .mylink-item div:first-child {
+  flex: 1;
+} */
+
+.mylink-item h2,
+.mylink-item a:link,
+.mylink-item a:visited {
+  color: var(--color-navy);
+  font-family: var(--font-base);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mylink-item a:hover,
+.mylink-item a:active {
+  color: var(--color-blue);
+}
+
+.visits {
+  font-weight: 600;
+  font-family: var(--font-alt);
+  color: var(--color-navy);
+}
+
+@media screen and (min-width: 2000px) {
+  .mylink-item h2,
+  .mylink-item a:link,
+  .mylink-item a:visited {
+    font-size: 2.2rem;
+  }
+  .visits {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .mylink-item h2,
+  .mylink-item a:link,
+  .mylink-item a:visited {
+    font-size: 1.7rem;
+  }
+  .visits {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mylink-item h2,
+  .mylink-item a:link,
+  .mylink-item a:visited {
+    font-size: 1.4rem;
+  }
+  .visits {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mylink-item,
+  .mylink {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mylink-item h2,
+  .mylink-item a:link,
+  .mylink-item a:visited {
+    font-size: 1.3rem;
+  }
+  .visits {
+    font-size: 1.3rem;
+  }
+}

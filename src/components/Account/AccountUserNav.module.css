@@ -1,0 +1,239 @@
+.user-view {
+  background-color: #fff;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.07);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-view__menu {
+  /* -webkit-box-flex: 32rem;
+  -ms-flex: 32rem 0 0px;
+  flex: 32rem 0 0; */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#2b5592),
+    to(#64bbe3)
+  );
+  background-image: linear-gradient(to right bottom, #2b5592, #64bbe3);
+  padding: 4rem 0;
+  margin-left: 0;
+}
+
+/* Admin Nav */
+
+.admin-nav {
+  margin-top: 5.5rem;
+}
+.admin-nav__heading {
+  margin: 0 5rem 1.5rem 4rem;
+  padding-bottom: 3px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  border-bottom: 1px solid currentColor;
+}
+
+/* Side Nav */
+
+.side-nav {
+  list-style: none;
+}
+.side-nav li {
+  margin: 1rem 0;
+  border-left: 0 solid #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.active,
+.side-nav li:hover {
+  border-left: 10px solid #fff !important;
+}
+
+.active {
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+.side-nav a:link,
+.side-nav a:visited {
+  padding: 1rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.side-nav a:hover,
+.side-nav a:active {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+}
+.react-icon {
+  /* height: 1.9rem;
+  width: 1.9rem; */
+  fill: #f7f7f7;
+  margin-right: 2rem;
+}
+
+/* SMALL SCREEN */
+
+.sidenav-smallscreen {
+  display: none;
+}
+.sidenav-smallscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0rem;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#2b5592),
+    to(#64bbe3)
+  );
+  background-image: linear-gradient(to right bottom, #2b5592, #64bbe3);
+  padding: 4rem 0;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.overlay-close {
+  font-size: 2.7rem;
+  cursor: pointer;
+  position: absolute;
+  top: 11rem;
+  right: 1.5rem;
+}
+.sidenav-smallscreen-links {
+  display: none;
+}
+.sidenav-smallscreen-links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-alt);
+}
+
+.sidenav-smallscreen-links li a:link,
+.sidenav-smallscreen-links li a:visited {
+  color: var(--color-white);
+}
+.sidenav-smallscreen-links li a:hover,
+.sidenav-smallscreen-links li a:active {
+  color: var(--color-white);
+}
+
+.sidenav-smallscreen-login {
+  display: none;
+}
+
+.active:link,
+.active:visited {
+  color: var(--color-white);
+  transition: 0.5s ease;
+}
+.active:hover,
+.active:active {
+  color: var(--colour-white);
+}
+
+.sidenav-smallscreen-icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 2001px) {
+  .sidenav-login {
+    font-size: 3rem;
+    gap: 1rem;
+  }
+  .sidenavLinks {
+    font-size: 3rem;
+  }
+  .sidenavLogo img {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 2000px) {
+  .sidenavLogo img {
+    width: 7rem;
+  }
+  .sidenav-login {
+    font-size: 2.5rem;
+  }
+  .sidenavLinks {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .user-view {
+    max-width: 80rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .user-view {
+    max-width: 50rem;
+  }
+  .user-view__menu {
+    display: none;
+  }
+
+  .sidenav-smallscreen {
+    display: flex;
+  }
+  .sidenav-smallscreen-links,
+  .sidenav-smallscreen-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: var(--font-alt);
+  }
+
+  .sidenav-smallscreen-login a:link,
+  .sidenav-smallscreen-login a:visited {
+    color: var(--color-white);
+    margin: 1rem;
+  }
+
+  .sidenav-smallscreen-login a:hover,
+  .sidenav-smallscreen-login a:active {
+    color: var(--color-white);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .user-view {
+    max-width: 40rem;
+  }
+}

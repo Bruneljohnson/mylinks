@@ -1,0 +1,233 @@
+.mainImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainImage img {
+  height: 12rem;
+  width: 35.2rem;
+}
+.shortbox {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+.shortbox input {
+  width: 100%;
+  height: 5rem;
+  border-radius: 2.5rem;
+  border: 1px solid darkgray;
+  padding-left: 7rem;
+  font-size: 2rem;
+  font-family: var(--font-base);
+  color: var(--color-grey);
+}
+
+.shortbox input:hover {
+  box-shadow: 1px 1px 5px #2c2c2c70;
+}
+
+.shortbox input:focus {
+  outline: none;
+}
+
+.shortbox input::placeholder {
+  font-family: var(--font-base);
+  font-size: 1.8rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon svg {
+  fill: darkgray;
+}
+.searchIcon svg:hover {
+  fill: var(--color-blue);
+}
+
+.heading-secondary {
+  font: var(--font-base);
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--color-navy)),
+    to(var(--color-blue))
+  );
+  background-image: linear-gradient(
+    to right,
+    var(--color-navy),
+    var(--color-blue)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  display: inline-block;
+}
+.heading-secondary--error {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--color-orange)),
+    to(var(--color-red))
+  );
+  background-image: linear-gradient(
+    to right,
+    var(--color-orange),
+    var(--color-red)
+  );
+  font-size: 3.5rem;
+}
+.font-size {
+  font-size: 2rem;
+}
+.header {
+  background-color: var(--color-white);
+  /* background-image: linear-gradient(90deg, #f5f6fc85, var(--color-blue)),
+    url('/img/logos/35185.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; */
+  /* background-attachment: fixed; */
+}
+.header h1 {
+  /* margin-top: 1.5rem; */
+  margin-left: 0;
+  font-family: var(--font-base);
+  font-weight: 700;
+  color: var(--color-navy);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 12rem;
+  text-shadow: 0 5px 5px #0c0c0c5c;
+}
+.header h3 {
+  margin-top: 1rem;
+  margin-left: 0;
+  font-family: var(--font-base);
+  color: var(--color-black);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  line-height: 80px;
+  font-size: 8rem;
+  text-shadow: 0 5px 5px #0c0c0c5c;
+}
+.header p {
+  margin: 2rem;
+  margin-left: 0;
+}
+.header button {
+  margin-left: 0;
+}
+
+.createAcc a:link,
+.createAcc a:visited {
+  color: var(--color-orange);
+  font-weight: 600;
+  transition: 0.5s ease;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.createAcc a:hover,
+.createAcc a:active {
+  border-bottom: 3px solid var(--color-blue);
+}
+@media screen and (min-width: 2000px) {
+}
+
+@media screen and (max-width: 2000px) {
+  .header h1 {
+    line-height: 110px;
+    font-size: 12rem;
+  }
+  .header h3 {
+    line-height: 60px;
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .mainImage img {
+    height: 10rem;
+    width: 25.2rem;
+  }
+
+  .shortbox input {
+    height: 5rem;
+  }
+
+  .header h1 {
+    line-height: 120px;
+    font-size: 12rem;
+  }
+  .header h3 {
+    line-height: 60px;
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header h3 {
+    line-height: 50px;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mainImage img {
+    height: 8rem;
+    width: 18.2rem;
+  }
+  .font-size {
+    font-size: 1.8rem;
+  }
+  .header h1 {
+    line-height: 90px;
+    font-size: 8rem;
+  }
+  .header h3 {
+    line-height: 40px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainImage img {
+    height: 6rem;
+    width: 14.2rem;
+  }
+  .font-size {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .font-size {
+    font-size: 1.4rem;
+  }
+  .shortbox {
+    width: 80%;
+  }
+  .header h1 {
+    line-height: 50px;
+    font-size: 5rem;
+  }
+  .header h3 {
+    line-height: 30px;
+    font-size: 3rem;
+  }
+}

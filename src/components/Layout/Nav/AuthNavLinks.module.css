@@ -1,0 +1,84 @@
+.logout-button {
+  background-color: var(--color-fadedblue);
+  color: var(--color-navy);
+  display: flex;
+  margin-left: 0;
+
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: 5px solid rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 5px #2c2c2c70;
+  outline: none;
+  cursor: pointer;
+}
+.logout-button:hover {
+  background-color: var(--color-navy);
+  color: var(--color-fadedblue);
+}
+.nav__user-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 0 1.5rem;
+  border: 3px solid var(--color-blue);
+  box-shadow: 0 0 5px #2c2c2c70;
+}
+li span,
+li a:link,
+li a:visited {
+  margin: 1rem 1rem;
+  transition: 0.5s ease;
+  text-decoration: none !important;
+  color: var(--color-navy);
+}
+
+li span:hover {
+  color: var(--color-blue);
+}
+
+li span {
+  display: inline-block;
+}
+.active {
+  color: var(--color-blue);
+}
+.name {
+  text-transform: capitalize;
+}
+@media screen and (min-width: 2000px) {
+  .logout-button {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+  .nav__user-img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 0 1.5rem;
+  }
+  .li span,
+  .li a {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .logout-button {
+    font-size: 2rem;
+  }
+
+  .li {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .logout-button {
+    font-size: 2rem;
+  }
+}
