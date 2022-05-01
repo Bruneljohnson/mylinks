@@ -143,6 +143,7 @@ const Signup = (props) => {
           <div className={`${classes["form__group"]} ma-tp-md`}>
             {formStep !== 1 && (
               <button
+                style={{ margin: "2rem 0" }}
                 className="custom-button"
                 type="button"
                 onClick={onFormSteps}
