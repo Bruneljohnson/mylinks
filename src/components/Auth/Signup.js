@@ -18,9 +18,7 @@ const Signup = (props) => {
     inputHandler: nameInputHandler,
     blurHandler: nameBlurHandler,
     clear: clearName,
-  } = useInput(
-    (value) => value.toLowerCase().trim() !== `` && value.trim().includes(` `)
-  );
+  } = useInput((value) => value.toLowerCase().trim().includes(` `));
   const {
     value: enteredEmail,
     isValid: enteredEmailIsValid,
@@ -101,7 +99,7 @@ const Signup = (props) => {
                 label="Name"
                 id="name"
                 type="text"
-                placeholder="John Doe"
+                placeholder="John Doe - Please Enter Full Name"
                 value={enteredName}
                 onBlur={nameBlurHandler}
                 onChange={nameInputHandler}
