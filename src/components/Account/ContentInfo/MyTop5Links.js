@@ -107,7 +107,7 @@ const MyTop5Links = (props) => {
             <img
               className={classes["form__user-photo"]}
               src={`
-                https://mylinks-url.herokuapp.com/${user?.photo}`}
+              https://mylinks-url.herokuapp.com/api/v1/users/images/${user?.photo}`}
               alt={user.name}
             />
           </div>
