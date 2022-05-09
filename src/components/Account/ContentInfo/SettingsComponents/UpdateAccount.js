@@ -48,10 +48,10 @@ const UpdateAccount = () => {
 
   /* VERIFY FORM */
   useEffect(() => {
-    if (enteredEmailIsValid && enteredNameIsValid) {
+    if (enteredEmailIsValid || enteredNameIsValid || selectedFile) {
       setFormIsValid(true);
     }
-  }, [enteredEmailIsValid, enteredNameIsValid]);
+  }, [enteredEmailIsValid, enteredNameIsValid, selectedFile]);
 
   /* AXIOS PATCH REQUEST TO UPADTE USER DETAILS VIA FORMDATA */
   const updateDetailsHandler = (event) => {
