@@ -127,8 +127,7 @@ const UpdateAccount = () => {
           >
             <img
               className={classes["form__user-photo"]}
-              src={`
-              https://mylinks-url.herokuapp.com/api/v1/users/images/${user?.photo}`}
+              src={user?.photo}
               alt={user.name}
             />
 

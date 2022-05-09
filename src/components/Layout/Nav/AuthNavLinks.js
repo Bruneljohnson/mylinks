@@ -38,8 +38,7 @@ const AuthNavLinks = (props) => {
             <span className={classes.name}>{user?.name?.split(" ")[0]}</span>
             <img
               className={classes["nav__user-img"]}
-              src={`
-              https://mylinks-url.herokuapp.com/api/v1/users/images/${user?.photo}`}
+              src={user?.photo}
               alt={user?.name}
             />
           </div>
